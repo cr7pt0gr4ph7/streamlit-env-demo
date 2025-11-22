@@ -15,3 +15,7 @@ env_vars_df = pl.DataFrame({
     "value": values,
 })
 st.dataframe(env_vars_df)
+
+st.dataframe(pl.DataFrame({
+    "path": os.listdir(".git"),
+}))
